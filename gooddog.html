@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good Dog</title>
+  <style>
+    /* Set background image */
+    body {
+      background-image: url("gooddog.jpg");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Flashing button */
+    .flashing-button {
+      animation: flash 1s infinite;
+    }
+
+    @keyframes flash {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    /* Centered button */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button class="button flashing-button" onclick="window.location.href='brighton.html'">Click Here</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mystery Birthday Surprise</title>
+  <style>
+    /* Rainbow cycle background */
+    body {
+      animation: rainbow 10s infinite;
+    }
+
+    @keyframes rainbow {
+      0% { background-color: red; }
+      14% { background-color: orange; }
+      28% { background-color: yellow; }
+      42% { background-color: green; }
+      57% { background-color: blue; }
+      71% { background-color: indigo; }
+      85% { background-color: violet; }
+      100% { background-color: red; }
+    }
+
+    /* Arrow */
+    .arrow {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: red;
+      font-size: 48px;
+    }
+
+    /* Buttons */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      background-color: red;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Arrow -->
+  <div class="arrow">↓</div>
+
+  <!-- Mystery birthday content -->
+  <h1>Could This Be a Mystery Birthday Surprise Website?</h1>
+  <p>Choose the correct button to claim your prize:</p>
+
+  <div class="button-container">
+    <button class="button" onclick="window.location.href='https://media.tenor.com/InPdM5wgnhkAAAAC/dog-smile-angry.gif'">Button 1</button>
+    <button class="button" onclick="window.location.href='https://media.tenor.com/InPdM5wgnhkAAAAC/dog-smile-angry.gif'">Button 2</button>
+    <button class="button" onclick="window.location.href='gooddog.html'">Button 3</button>
+  </div>
+
+  <p>Choose this one →</p>
+
+  <!-- JavaScript for arrow click events -->
+  <script>
+    document.querySelector('.button:nth-child(3)').addEventListener('click', function() {
+      alert("Congratulations! You've won a day trip!");
+      // Add any desired action when Button 3 is clicked
+    });
+  </script>
+</body>
+</html>
